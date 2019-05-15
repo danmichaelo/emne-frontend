@@ -13,11 +13,15 @@ import RatingControl from './RatingControl';
 import ratingControlTester from './ratingControlTester'
 
 const data = {
-  name: 'Send email to Adrian',
-  description: 'Confirm if you have passed the subject\nHereby ...',
-  done: true,
-  recurrence: 'Daily',
-  rating: 3,
+    identifier: "12345",
+    preferredLabel: "preferredLabel",
+    alternativeLabel: "alternativeLabel",
+    narrower: "narrower",
+    broader: "broader",
+    related: "related",
+    definition: "definition",
+    inScheme: "inScheme",
+    seeAlso: "seeAlso"
 };
 
 const initState: JsonFormsState = {
@@ -30,7 +34,7 @@ const initState: JsonFormsState = {
 const rootReducer: Reducer<JsonFormsState, AnyAction> = combineReducers({ jsonforms: jsonformsReducer() });
 const store = createStore(rootReducer, initState);
 
-store.dispatch(Actions.init(data, schema, uischema));
+store.dispatch(Actions.init(data, schema));
 
 
 // Uncomment this line (and respective import) to register our custom renderer

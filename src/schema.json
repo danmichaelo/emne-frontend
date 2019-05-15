@@ -1,22 +1,32 @@
 {
   "type": "object",
   "properties": {
-    "name": {
+    "identifier": {
       "type": "string"
     },
-    "description": {
+    "preferredLabel": {
       "type": "string"
     },
-    "done": {
-      "type": "boolean"
+    "alternativeLabel": {
+      "type": "string"
     },
-    "due_date": {
-      "type": "string",
-      "format": "date"
+    "narrower": {
+      "type": "string"
     },
-    "rating": {
-      "type": "integer",
-      "maximum": 5
+    "broader": {
+      "type": "string"
+    },
+    "related": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "string"
+    },
+    "inScheme": {
+      "type": "string"
+    },
+    "seeAlso": {
+      "type": "string"
     },
     "recurrence": {
       "type": "string",
