@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import withStyles, { WithStyles } from "@material-ui/core/styles/withStyles";
 import {getData, JsonFormsState} from '@jsonforms/core';
-import logo from './logo.svg';
+import logo from './Unit ikon farge.png';
 import './App.css';
 import createStyles from "@material-ui/core/styles/createStyles";
 
@@ -41,8 +41,8 @@ class App extends React.Component<AppProps, any> {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo"/>
-            <h1 className="App-title">Welcome to JSON Forms with React</h1>
-            <p className="App-intro">More Forms. Less Code.</p>
+            <h1 className="App-title">Emneregister demo</h1>
+            <p className="App-intro"></p>
           </header>
         </div>
 
