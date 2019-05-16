@@ -5,13 +5,22 @@
       "type": "string"
     },
     "preferredLabel": {
-      "type": "string"
+      "type": "array", 
+      "items": {
+        "type": "string"
+      }
     },
     "alternativeLabel": {
-      "type": "string"
+      "type": "array", 
+      "items": {
+        "type": "string"
+      }
     },
     "narrower": {
-      "type": "string"
+      "type": "array", 
+      "items": {
+        "type": "string"
+      }
     },
     "broader": {
       "type": "string"
@@ -42,6 +51,6 @@
     }
   },
   "required": [
-    "name"
+    "preferredLabel", "alternativeLabel", "inScheme"
   ]
 }

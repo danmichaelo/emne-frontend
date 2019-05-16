@@ -5,9 +5,9 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import withStyles, { WithStyles } from "@material-ui/core/styles/withStyles";
 import {getData, JsonFormsState} from '@jsonforms/core';
-import logo from './Unit ikon farge.png';
 import './App.css';
 import createStyles from "@material-ui/core/styles/createStyles";
+import  SimpleAppBar from "./SimpleAppBar";
 
 const styles = createStyles({
   container: {
@@ -38,35 +38,28 @@ class App extends React.Component<AppProps, any> {
     const { classes, dataAsString } = this.props;
     return (
       <div>
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo"/>
-            <h1 className="App-title">Emneregister demo</h1>
-            <p className="App-intro"></p>
-          </header>
-        </div>
-
-        <Grid container justify={'center'} spacing={24} className={classes.container}>
-          <Grid item sm={6}>
+        <SimpleAppBar />
+        <Grid container justify={'center'} spacing={16} className={classes.container}>
+          <Grid item sm={9}>
             <Typography
               variant={'display1'}
               className={classes.title}
             >
-              Bound data
-            </Typography>
-            <div className={classes.dataContent}>
-              <pre>{dataAsString}</pre>
-            </div>
-          </Grid>
-          <Grid item sm={6}>
-            <Typography
-              variant={'display1'}
-              className={classes.title}
-            >
-              Rendered form
+              Registreringsskjema
             </Typography>
             <div className={classes.demoform}>
               <JsonForms/>
+            </div>
+          </Grid>
+          <Grid item sm={9}>
+            <Typography
+              variant={'display1'}
+              className={classes.title}
+            >
+              Data
+            </Typography>
+            <div className={classes.dataContent}>
+              <pre>{dataAsString}</pre>
             </div>
           </Grid>
         </Grid>
