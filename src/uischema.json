@@ -1,6 +1,5 @@
 {
-    "type": "Group",
-    "label": "Emne",
+    "type": "VerticalLayout",
     "elements": [
       {
         "type": "Control",
@@ -15,14 +14,22 @@
 
       },
       {
-        "type": "Control",
-        "label": "Preferred label",
-        "scope": "#/properties/preferredLabel"
+        "type": "VerticalLayout",
+        "elements": [
+            {
+                "type": "Control",
+                "scope": "#/properties/preferredLabel"
+            }
+        ]
       },
       {
-        "type": "Control",
-        "label": "Alternative label",
-        "scope": "#/properties/alternativeLabel"
+        "type": "VerticalLayout",
+        "elements": [
+           {
+             "type": "Control",
+             "scope": "#/properties/alternativeLabel"
+           }
+        ]
       },
       {
         "type": "Control",

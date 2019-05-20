@@ -13,11 +13,23 @@ import RatingControl from './RatingControl';
 import ratingControlTester from './ratingControlTester'
 
 const data = {
+    "@context": "something",
     identifier: "12345",
-    preferredLabel: ["preferredLabel"],
-    related: "related",
+    preferredLabel: [
+        {
+            value: "prefLabel",
+            lang: "EN",
+        }
+    ],
+    alternativeLabel: [
+        {
+            value: "altLabel",
+            lang: "EN",
+        }
+    ],
+    related: ["related"],
     definition: "definition",
-    seeAlso: "seeAlso"
+    seeAlso: ["seeAlso"],
 };
 
 const initState: JsonFormsState = {

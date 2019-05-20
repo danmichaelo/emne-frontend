@@ -1,19 +1,46 @@
 {
   "type": "object",
   "properties": {
+      "@context": {
+          "type": "string"
+      },
     "identifier": {
       "type": "string"
     },
     "preferredLabel": {
       "type": "array", 
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+            "value": {
+                "type": "string"
+            },
+            "lang": {
+                "type": "string",
+                "enum": [
+                    "NO",
+                    "EN"
+                ]
+            }
+        }
       }
     },
     "alternativeLabel": {
       "type": "array", 
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+            "value": {
+                "type": "string"
+            },
+            "lang": {
+                "type": "string",
+                "enum": [
+                    "NO",
+                    "EN"
+                ]
+            }
+        }
       }
     },
     "narrower": {
@@ -26,7 +53,10 @@
       "type": "string"
     },
     "related": {
-      "type": "string"
+      "type": "array", 
+      "items": {
+          "type": "string"
+      }
     },
     "definition": {
       "type": "string"
@@ -35,7 +65,10 @@
       "type": "string"
     },
     "seeAlso": {
-      "type": "string"
+      "type": "array", 
+      "items": {
+        "type": "string"
+      }
     },
     "recurrence": {
       "type": "string",
