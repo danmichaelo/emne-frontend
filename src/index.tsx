@@ -18,13 +18,13 @@ const data = {
     preferredLabel: [
         {
             value: "prefLabel",
-            lang: "EN",
+            lang: "nb",
         }
     ],
     alternativeLabel: [
         {
             value: "altLabel",
-            lang: "EN",
+            lang: "nb",
         }
     ],
     related: ["related"],
